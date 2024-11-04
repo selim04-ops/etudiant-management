@@ -1,0 +1,30 @@
+<div class="etudiant-list-container">
+    <h2>List of Etudiants</h2>
+    <button class="btn btn-custom mb-3" (click)="createNewEtudiant()">Add New Etudiant</button>
+    <br>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>CIN</th>
+          <th>Date of Birth</th>
+          <th>Actions</th> <!-- Add actions column -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let etudiant of etudiants">
+          <td>{{ etudiant.idEtudiant }}</td>
+          <td>{{ etudiant.nomEtudiant }}</td>
+          <td>{{ etudiant.prenomEtudiant }}</td>
+          <td>{{ etudiant.cinEtudiant }}</td>
+          <td>{{ etudiant.dateNaissance | date: 'yyyy-MM-dd' }}</td>
+          <td>
+            <button (click)="deleteEtudiant(etudiant.idEtudiant)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
