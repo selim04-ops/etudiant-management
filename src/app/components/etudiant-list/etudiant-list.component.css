@@ -1,54 +1,58 @@
 .etudiant-list-container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  h2 {
-    color: #4CAF50;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  table, th, td {
-    border: 1px solid #ddd;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  tr:hover {
-    background-color: #e0f7fa;
-  }
-  /* Custom button style */
+  width: 75%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+h2 {
+  color: #ff5722; /* Changement de couleur */
+  font-size: 26px; /* Taille de police légèrement plus grande */
+  margin-bottom: 15px; /* Moins d'espacement */
+}
+
+table {
+  width: 100%;
+  border-collapse: separate; /* Utilisation de bordures séparées */
+  border-spacing: 5px; /* Espacement entre les cellules */
+  margin-bottom: 25px;
+}
+
+table, th, td {
+  border: 2px solid #b0bec5; /* Couleur de bordure modifiée */
+}
+
+th, td {
+  padding: 15px; /* Augmentation du padding */
+  text-align: center; /* Alignement au centre */
+}
+
+th {
+  background-color: #c5e1a5; /* Changement de couleur de fond */
+  color: #2e7d32; /* Couleur de texte différente */
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #fce4ec; /* Couleur de fond rose clair */
+}
+
+tr:hover {
+  background-color: #d7ccc8; /* Couleur de fond différente au survol */
+}
+
+/* Style personnalisé pour les boutons */
 .btn-custom {
-    background-color: #007bff; /* Bootstrap primary color */
-    color: white; /* White text */
-    border: none; /* No border */
-    padding: 10px 20px; /* Add some padding */
-    font-size: 16px; /* Increase font size */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition */
+  background-color: #9c27b0; /* Violet */
+  color: #ffffff; /* Texte blanc */
+  border: 1px solid #7b1fa2; /* Bordure pour effet de contraste */
+  padding: 12px 25px; /* Augmentation du padding */
+  font-size: 18px; /* Taille de police légèrement plus grande */
+  border-radius: 8px; /* Bordure plus arrondie */
+  transition: transform 0.3s; /* Transition de transformation */
 }
 
 .btn-custom:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-    color: #ffffff; /* Keep text white on hover */
+  background-color: #6a1b9a; /* Teinte plus sombre au survol */
+  color: #ffffff; /* Texte reste blanc */
+  transform: scale(1.05); /* Légère augmentation de taille au survol */
 }

@@ -1,56 +1,62 @@
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="number"],
-  input[type="date"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  input[type="text"]:focus,
-  input[type="number"]:focus,
-  input[type="date"]:focus {
-    border-color: #66afe9;
-    outline: none;
-  }
-  
-  .btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
+  max-width: 650px; /* Largeur maximale légèrement augmentée */
+  margin: 10px auto; /* Ajout d’un léger espace en haut et en bas */
+  padding: 25px; /* Padding légèrement augmenté */
+  border: 2px dashed #b0bec5; /* Bordure en pointillés et couleur modifiée */
+  border-radius: 12px; /* Coins plus arrondis */
+  background-color: #e3f2fd; /* Couleur de fond bleu clair */
+}
+
+h2 {
+  text-align: left; /* Alignement à gauche */
+  color: #3949ab; /* Couleur du texte modifiée */
+  margin-bottom: 25px; /* Plus d'espace en bas */
+  font-size: 1.8rem; /* Taille de police légèrement augmentée */
+}
+
+.form-group {
+  margin-bottom: 18px; /* Espacement légèrement augmenté */
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 7px; /* Espacement légèrement augmenté */
+  font-weight: 600; /* Poids de police ajusté */
+  color: #2e7d32; /* Couleur de texte modifiée */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px; /* Augmentation du padding */
+  border: 1.5px solid #90a4ae; /* Bordure légèrement plus épaisse */
+  border-radius: 6px; /* Coins plus arrondis */
+  background-color: #fafafa; /* Fond clair */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  border-color: #ffab40; /* Couleur de focus différente */
+  outline: none;
+  box-shadow: 0 0 5px #ffab40; /* Ombre ajoutée au focus */
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px; /* Augmentation du padding */
+  background-color: #8e24aa; /* Couleur de fond violette */
+  color: #ffffff;
+  border: 2px solid #6a1b9a; /* Ajout d'une bordure contrastante */
+  border-radius: 8px; /* Coins plus arrondis */
+  cursor: pointer;
+  font-size: 18px; /* Taille de police légèrement augmentée */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Ajout d'une transformation */
+}
+
+.btn:hover {
+  background-color: #4a148c; /* Couleur plus foncée au survol */
+  transform: scale(1.05); /* Légère augmentation de taille au survol */
+}

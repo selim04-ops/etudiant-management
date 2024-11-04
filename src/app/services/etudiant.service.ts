@@ -8,7 +8,7 @@ import { Etudiant } from '../models/etudiant.model';
 })
 export class EtudiantService {
 
-  private apiUrl = 'http://192.168.81.128:8089/tpfoyer/etudiant';
+  private apiUrl = 'http://10.0.0.151:8089/tpfoyer/etudiant';
 
   constructor(private http: HttpClient) { }
 
